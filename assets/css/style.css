@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Poppins&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "catamaran", sans-serif;
+    font-size: 16px;
+
+}
+
+/* Universal CSS Start */
+.text-orange {color: #f71010}
+.text-black {color: #180238}
+.text-silver {color: #686884}
+.bg-orange {background: #f71010 !important;}
+.bg-light-orange{background:#fdf6ed;}
+.bg-light-yellow{background:#fee9ca;}
+.bg-yellow {background: #d67f1c !important;}
+.mt-10 {margin-top: 100px;}
+.mt-15 {margin-top: 150px;}
+.mt-20 {margin-top: 200px;}
+.pb-70{padding-bottom: 70}
+.pt-100{padding-top: 100px;}
+.pb-100{padding-bottom: 70px;}
+.btn {
+    color: #fff;
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    position: relative;
+    background: #f5890d;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #f5890d;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+.h1, .h2, h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    color: #160238;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+}
+
+/* Universal CSS End */
+
+/* Nav Section Start */
+a.active {
+    color: #f71010 !important;
+}
+
+.dropdown-menu {
+    width: 280px;
+    border: none;
+    border-radius: 0px;
+    transition: all 4s ease-in-out;
+    box-shadow: 0px 0px 15px 0px #ccc;
+
+}
+a.nav-link:hover,
+a.dropdown-item:hover {
+    color: #f71010 !important;
+    transition: 0.2s linear;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Nav Section End */
+
+/* banner Section Start */
+.banner {
+    width: 100%;
+    height: 700px;
+    background: url(../img/main-banner-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.shape-1 {
+    top: 3.5%;
+    left: .7%;
+    animation: move 1s linear infinite alternate;
+}
+.shape-2 {
+    top: 3.5%;
+    left: .7%;
+    animation: move 1s linear infinite alternate;
+}
+.shape-3 {
+    top: 64%;
+    left: .7%;
+    z-index: 9;
+    animation: move 1s linear infinite alternate;
+}
+.shape-4 {
+    top: 3.5%;
+    left: .7%;
+    animation: move 1s linear infinite alternate;
+}
+.banner h1 {
+    color: #160238;
+    font-size: 38px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* banner Section End */
+
+/* Who We Are Section Start */
+.who span, 
+.popular span,
+.teacher span,
+.core-value span,
+.news-blog span,
+.testimonial span
+{
+    font: 600;
+    font-size: 20px;
+    color: #f71010;
+    font-family: 'Sacramento', cursive;
+}
+.who h3,
+.popular h3,
+.teacher h3,
+.core-value h3,
+.news-blog h3,
+.testimonial h3
+ {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.who ul li{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.who ul li span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f71010;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 8px;
+    transition: all .3s ease-in;
+    font-family :"catamaran", sans-serif;
+}
+.who ul li:hover span{
+    background: #f71010;
+    transition: all .3s ease-in;
+    
+}
+
+/* Who We Are Section End */
+/* Popular Section Start  */
+.popular .card:hover img{
+    transform: rotate(2deg) scale(1.07);
+    transition: all 0.3s linear;
+}
+/* Popular Section End  */
+
+/* core value Start */
+.core-value .number{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 25px;
+    color: #1b0238;
+    display: inline-block;
+    border: 3px solid #fff;
+    outline: 1px solid #ccc;
+    outline-offset: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: "catamaran", sans-serif;
+}
+.core-value .number:hover{
+    color: #fff;
+    background: #f71010 !important;
+    transition: 0.5s;
+    outline-color: #f71010;
+
+}
+/* core value End */
+
+/* Teacher Section Start */
+.teacher .social-media{ 
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    color: #fff;
+    margin-bottom: -70px;
+    transition: all 0.5s ease-in;
+}
+.teacher .teacher-image:hover .social-media{
+    margin-bottom: 0px;
+    transition:all 0.5s ease-out;
+
+}
+.teacher .social-media li{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    line-height: 35px;
+    background: #f71010;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+.teacher .social-media li a{
+    color: #fff;
+}
+.teacher .social-media li:hover{
+    background: #f71010;
+    transition: 0.3s ease;
+}
+/* Teacher Section End */
+
+/* testimonial Sectin Start */
+.cardb{
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 49%;
+    border: none;
+    background-color: #fee9ca;
+}
+.cardb div{
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+    line-height: 65px;
+    border-radius: 50%;
+    background: #fff;
+    margin: auto;
+}
+.testimonial .nav-button button{
+ width: 50px;
+ height: 50px;
+ color: #fff;
+ font-size: 45px;
+ line-height: 10px;
+ font-weight:600 ;
+ text-align: center;
+ border-radius: 50%;
+ background: #f71010;
+ margin-left: 40px;
+ margin-right: 40px;
+}
+.testimonial .nav-button button{
+    background: #f5890d;
+    transition: 0.5s linear;
+}
+/* testimonial Sectin End */
+
+/* Footer Section Start */
+.footer{
+background: url(../img/footer-bg.jpg)
+
+}
+/* Footer Section End */
+
+
+@keyframes move {
+    0% {}
+    100% {
+        left: 3%
+    }
+}
+
+@keyframes move2 {
+    0% {}
+    100% {
+        left: 52.3%
+    }
+}
